@@ -1,9 +1,10 @@
+// Criar conexão com DB - https://sidorares.github.io/node-mysql2/docs
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
     host        : 'seu_host',
-    database    : 'seu_banco_de_dados'
+    database    : 'seu_banco_de_dados',
     user        : 'seu_usuario',
-    password    : 'sua_senha',
+    password    : 'sua_senha'
 });
 
 
