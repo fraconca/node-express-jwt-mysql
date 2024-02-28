@@ -22,10 +22,17 @@ npm install express --save
 ```
 
 
-#### [ExpressJS](https://github.com/expressjs/expressjs.com)
+#### [JSON Web Token](#)
 
 ```
 npm install jsonwebtoken --save
+```
+
+
+#### [ExpressJS](#)
+
+```
+npm install jsonwebtoken
 ```
 
 
@@ -37,5 +44,9 @@ npm install @picocss/pico --save
 
 
 ##### Fontes
-- [JWT WebToken](https://www.npmjs.com/package/jsonwebtoken)
-- [Express](https://expressjs.com/en/resources/template-engines.html)
+
+- [Express](https://expressjs.com)
+- [JWT](https://jwt.io/libraries?language=Node.js)
+- [JWT WebToken - NPM](https://www.npmjs.com/package/jsonwebtoken)
+- [MySQL](https://github.com/mysqljs/mysql#readme)
+- [MySQL NPM](https://www.npmjs.com/package/mysql)
