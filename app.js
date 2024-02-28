@@ -33,5 +33,23 @@ function authenticateToken(req, res, next) {
 };
 
 
+// Rota de login para gerar token
+app.post('/login', (req, res) => {
+    const { username, password } = req.body;
+
+    db.query('SELECT * FROM usuarios WHERE username = ? AND password = ?', [username, password], (error, results) => {
+        if (error) throw error;
+
+        if (results.length > 0) {
+            const user = { username: results[0].username };
+            const token = jwt.sign(user, 'seu_segredo');
+            res.json({ token: token });
+        } else {
+            res.status(401).json({ message: 'Nome de usuário ou senha inválidos' });
+        }
+    });
+});
+
+
 // Listen da porta
 app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
