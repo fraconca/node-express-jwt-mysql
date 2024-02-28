@@ -6,6 +6,7 @@ const mysql = require('mysql');
 // Inicializar Express
 const app = express();
 
+// Inicializar e conectar ao MySQL
 const db = mysql.createConnection({
     host: 'seu_host',
     user: 'seu_usuario',
