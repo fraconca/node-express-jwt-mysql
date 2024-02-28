@@ -5,12 +5,19 @@ var connection = mysql.createConnection({
     password    : 'sua_senha',
     database    : 'seu_banco_de_dados'
 });
- 
+
+
 connection.connect();
- 
-connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
-  if (error) throw error;
-  console.log('A solução é: ', results[0].solution);
-});
- 
+
+
+// Um simples query SELECT
+connection.query(
+    'SELECT * FROM `table` WHERE `name` = "Page" AND `age` > 45',
+    function (err, results, fields) {
+      console.log(results); // results contains rows returned by server
+      console.log(fields); // fields contains extra meta data about results, if available
+    }
+);
+
+
 connection.end();
