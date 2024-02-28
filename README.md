@@ -22,6 +22,13 @@ npm install express --save
 ```
 
 
+#### [ExpressJS](https://github.com/expressjs/expressjs.com)
+
+```
+npm install jsonwebtoken --save
+```
+
+
 #### [PicoCSS](https://picocss.com/docs/dropdown)
 
 ```
@@ -30,5 +37,5 @@ npm install @picocss/pico --save
 
 
 ##### Fontes
-
+- [JWT WebToken](https://www.npmjs.com/package/jsonwebtoken)
 - [Express](https://expressjs.com/en/resources/template-engines.html)
