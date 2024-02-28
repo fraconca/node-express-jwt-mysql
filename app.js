@@ -51,5 +51,13 @@ app.post('/login', (req, res) => {
 });
 
 
+// Rota protegida
+app.get('/api/restrita', authenticateToken, (req, res) => {
+    // Se chegou aqui, o token foi verificado com sucesso
+    // Agora você pode manipular a solicitação com o usuário autenticado
+    res.json({ message: 'Acesso permitido' });
+});
+
+
 // Listen da porta
 app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
